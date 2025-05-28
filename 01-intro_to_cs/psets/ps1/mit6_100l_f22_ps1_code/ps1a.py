@@ -27,8 +27,6 @@ r = 0.05
 amount_saved = 0.0
 months = 0
 while amount_saved < down_payment:
-    # Calculate the interest based on the balance at the start of the month
     monthly_return = amount_saved * (r / 12)
-    # Add the monthly savings + the monthly return to the running balance
-    amount_saved += (monthly_salary * portion_saved) + monthly_return
     months += 1
+    amount_saved += (monthly_salary * portion_saved) + monthly_return
