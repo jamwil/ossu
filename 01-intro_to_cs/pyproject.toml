@@ -15,5 +15,6 @@ dev = [
 
 [tool.ruff.lint]
 select = ["ALL"]
+ignore = ["D100", "T201"]
 
 [tool.basedpyright]
