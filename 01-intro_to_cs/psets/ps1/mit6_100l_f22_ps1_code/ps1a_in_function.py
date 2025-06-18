@@ -12,9 +12,7 @@ def part_a(yearly_salary, portion_saved, cost_of_dream_home):
 	amount_saved = 0.0
 	months = 0
 	while amount_saved < down_payment:
-	    # Calculate the interest based on the balance at the start of the month
 	    monthly_return = amount_saved * (r / 12)
 	    months += 1
-	    # Add the monthly savings + the monthly return to the running balance
 	    amount_saved += (monthly_salary * portion_saved) + monthly_return
 	return months
